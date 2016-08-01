@@ -25,7 +25,7 @@ public class MyService extends Service {
 
     @Override
     public void onDestroy() {
-        // Destroy the service
+        // Destroy the service now
         super.onDestroy();
         Toast.makeText(this, "Service Destroyed", Toast.LENGTH_LONG).show();
     }
