@@ -54,11 +54,27 @@
         android:layout_weight="2"/>
 
     <Button
-        android:id="@+id/button7"
+    android:id="@+id/button7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Service"
+    android:onClick="serviceClick"
+    android:layout_weight="2"/>
+
+    <Button
+        android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Service"
-        android:onClick="serviceClick"
+        android:text="Boardcast"
+        android:onClick="boardcaastClick"
+        android:layout_weight="2"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Content Provider"
+        android:onClick="contentProviderClick"
         android:layout_weight="2"/>
 
 </LinearLayout>

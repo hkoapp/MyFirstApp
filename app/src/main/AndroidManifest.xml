@@ -39,6 +39,24 @@
         <activity android:name="com.example.android.service.MainService" />
 
         <service android:name="com.example.android.service.MyService" />
+
+        <activity android:name="com.example.android.broadcastreceiver.Broadcast_recevier" />
+
+        <receiver android:name="com.example.android.broadcastreceiver.MyReceiver">
+            <intent-filter>
+                <action android:name="com.example.android.CUSTOM_INTENT"></action>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.example.android.contentprovider.MyContentProvider"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider android:name="com.example.android.contentprovider.StudentsProvider"
+            android:authorities="com.example.android.college" />
+
     </application>
 
 </manifest>

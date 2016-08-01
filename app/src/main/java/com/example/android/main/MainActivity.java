@@ -8,6 +8,8 @@ import android.support.v4.content.ContextCompat;
 import android.view.View;
 
 import com.example.android.autocompleteedittext.AutocompleteText;
+import com.example.android.broadcastreceiver.Broadcast_recevier;
+import com.example.android.contentprovider.MyContentProvider;
 import com.example.android.fragment.FragmentMain;
 import com.example.android.fragment.R;
 import com.example.android.intent.IntentActivity;
@@ -58,6 +60,16 @@ public class MainActivity extends Activity {
 
     public void serviceClick(View view) {
         Intent intent = new Intent(this, MainService.class);
+        startActivity(intent);
+    }
+
+    public void boardcaastClick(View view) {
+        Intent intent = new Intent(this, Broadcast_recevier.class);
+        startActivity(intent);
+    }
+
+    public void contentProviderClick(View view) {
+        Intent intent = new Intent(this, MyContentProvider.class);
         startActivity(intent);
     }
 }
