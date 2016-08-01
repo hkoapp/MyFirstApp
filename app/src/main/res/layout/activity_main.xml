@@ -1,80 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0,1">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Transfer Activity"
-        android:onClick="myActivityClick"
-        android:layout_weight="2"/>
+    <TableRow>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:onClick="myActivityClick"
+            android:text="Transfer Activity" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Intent Activity"
-        android:onClick="intentActivityClick"
-        android:layout_weight="2"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="intentActivityClick"
+            android:text="Intent Activity" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="autoCompleteTextClick"
+            android:text="Autocomplete text" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Autocomplete text"
-        android:onClick="autoCompleteTextClick"
-        android:layout_weight="2"/>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="tabBarClick"
+            android:text="Tab bar" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="changeFragmentCLick"
+            android:text="Change Fragment" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tab bar"
-        android:onClick="tabBarClick"
-        android:layout_weight="2"/>
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="listDialogClick"
+            android:text="ListDialog Demo" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="serviceClick"
+            android:text="Service" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Change Fragment"
-        android:onClick="changeFragmentCLick"
-        android:layout_weight="2"/>
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="boardcaastClick"
+            android:text="Boardcast" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="contentProviderClick"
+            android:text="Content Provider" />
+    </TableRow>
+</TableLayout>
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ListDialog Demo"
-        android:onClick="listDialogClick"
-        android:layout_weight="2"/>
-
-    <Button
-    android:id="@+id/button7"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Service"
-    android:onClick="serviceClick"
-    android:layout_weight="2"/>
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Boardcast"
-        android:onClick="boardcaastClick"
-        android:layout_weight="2"/>
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Content Provider"
-        android:onClick="contentProviderClick"
-        android:layout_weight="2"/>
-
-</LinearLayout>
