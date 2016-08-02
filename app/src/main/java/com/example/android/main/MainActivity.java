@@ -13,6 +13,8 @@ import com.example.android.contentprovider.MyContentProvider;
 import com.example.android.fragment.FragmentMain;
 import com.example.android.fragment.R;
 import com.example.android.intent.IntentActivity;
+import com.example.android.intent.IntentBrower;
+import com.example.android.intent.IntentFilter;
 import com.example.android.listDialog.FragmentDialogDemo;
 import com.example.android.myactivity.MyActivity;
 import com.example.android.service.MainService;
@@ -70,6 +72,15 @@ public class MainActivity extends Activity {
 
     public void contentProviderClick(View view) {
         Intent intent = new Intent(this, MyContentProvider.class);
+        startActivity(intent);
+    }
+    public void intentBrowserClick(View view) {
+        Intent intent = new Intent(this, IntentBrower.class);
+        startActivity(intent);
+    }
+
+    public void intentFilterClick(View view) {
+        Intent intent = new Intent(this, IntentFilter.class);
         startActivity(intent);
     }
 }

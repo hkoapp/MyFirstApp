@@ -72,6 +72,22 @@
             android:layout_weight="1"
             android:onClick="contentProviderClick"
             android:text="Content Provider" />
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="intentBrowserClick"
+            android:text="Browser Intent" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="intentFilterClick"
+            android:text="Intent Filter" />
     </TableRow>
 </TableLayout>
 

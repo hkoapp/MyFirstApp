@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.fragment">
+package="com.example.android.fragment">
 
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="21" />
-    android:versionCode="1"
-    android:versionName="1.0" >
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21" />
+    <!--android:versionCode="1"-->
+    <!--android:versionName="1.0"-->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name"
+        android:supportsRtl="true" android:theme="@style/AppTheme">
+
+        <!--Show main page when launch-->
         <activity android:name="com.example.android.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FragmentMain" />
-        <activity android:name="com.example.android.myactivity.MyActivity" />
-        <activity android:name="com.example.android.myactivity.DisplayMessageActivity" />
-        <activity android:name="com.example.android.intent.IntentActivity" />
-        <activity android:name="com.example.android.autocompleteedittext.AutocompleteText" />
+
+        <!--Other activities-->
         <activity android:name="com.example.android.tab.TabBar" />
         <activity android:name="com.example.android.tab.Tab1" />
         <activity android:name="com.example.android.tab.Tab2" />
@@ -37,26 +29,47 @@
         <activity android:name="com.example.android.listDialog.EditNameDialog" />
         <activity android:name="com.example.android.listDialog.FragmentDialogDemo" />
         <activity android:name="com.example.android.service.MainService" />
+        <activity android:name="com.example.android.intent.IntentActivity" />
+        <activity android:name="com.example.android.intent.IntentBrower" />
+        <activity android:name="com.example.android.intent.IntentFilter" />
+        <activity android:name="com.example.android.fragment.FragmentMain" />
+        <activity android:name="com.example.android.myactivity.MyActivity" />
+        <activity android:name="com.example.android.myactivity.DisplayMessageActivity" />
+        <activity android:name="com.example.android.autocompleteedittext.AutocompleteText" />
 
+        <!--For handled service-->
         <service android:name="com.example.android.service.MyService" />
 
+        <!--For handle broadcast-->
         <activity android:name="com.example.android.broadcastreceiver.Broadcast_recevier" />
-
         <receiver android:name="com.example.android.broadcastreceiver.MyReceiver">
             <intent-filter>
-                <action android:name="com.example.android.CUSTOM_INTENT"></action>
+                <action android:name="com.example.android.CUSTOM_INTENT" />
             </intent-filter>
         </receiver>
 
-        <activity android:name="com.example.android.contentprovider.MyContentProvider"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+        <!--For content provider-->
+        <activity android:name="com.example.android.contentprovider.MyContentProvider" />
+
+        <!--ATTENTION: This was auto-generated to add Google Play services to your project for App Indexing. See https://g.co/AppIndexing/AndroidStudio for more information.-->
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 
         <provider android:name="com.example.android.contentprovider.StudentsProvider"
             android:authorities="com.example.android.college" />
 
+        <!--For intent filter-->
+        <activity android:name="com.example.android.intent.CustomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="com.example.android.intent.LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
     </application>
-
 </manifest>
+
+
+
+
